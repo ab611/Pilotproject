@@ -1,5 +1,14 @@
-def q1()
-    global name = input('What is your name?')
+import Uservar
 
-# I dont know what Im doing
+username = Uservar.username
+
+yes = 'yes'
+no = 'no'
+
+def q1():
+    global username
+    username = input('What is your name?')
+    Uservar.username = username
+
+
 
