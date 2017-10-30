@@ -1,3 +1,4 @@
+PENIS WRINKLE
 Started on the intro script to gather user info and bring up
 options to review rules and list of commands. 
         Uservar.py is for user based variables
