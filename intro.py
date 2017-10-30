@@ -32,6 +32,7 @@ def start():
             except:
                 print("Sorry, I didn't understand that.")
                 loop1()
+    # End of this section not yet figured out...currently the program just keeps looping back to "hello"
 
     loop1()
 
