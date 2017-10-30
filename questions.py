@@ -11,4 +11,3 @@ def q1():
     Uservar.username = username
 
 def pterodactyl:
-    
