@@ -14,4 +14,4 @@ def q1():
 THIS IS THE CHANGE
 TESTING 123
 
-
+This is new addition as of 15:57pm mst on 10/30/2017 did this merge properly? Did not change any of the old code at all.
