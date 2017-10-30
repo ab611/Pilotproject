@@ -10,5 +10,5 @@ def q1():
     username = input('What is your name?')
     Uservar.username = username
 
-
-
+def pterodactyl:
+    
