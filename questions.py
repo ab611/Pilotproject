@@ -9,6 +9,6 @@ def q1():
     global username
     username = input('What is your name?')
     Uservar.username = username
-no = yes
+
 def pterodactyl:
     
