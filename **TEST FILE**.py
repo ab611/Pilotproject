@@ -4,6 +4,7 @@ import scorekeeper
 import uservar
 import questions
 
+uservar.getname()
 uservar.difficulty()
 scorekeeper.change_money(-10000)
 questions.qtest()

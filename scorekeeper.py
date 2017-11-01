@@ -1,9 +1,11 @@
+import uservar
+
 money = 0
 age = 18
 slife = 100
 
 def masterpull():
-    print()
+    print("Ok {}, here are your stats..." .format(uservar.name))
     print("Money:", money)
     print("Age:", age)
     print("Social Life:", slife)

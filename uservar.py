@@ -31,7 +31,7 @@ def difficulty():
 
 # User specific information
 
-name = "unknown"
+name = 0
 
 def getname():
     global name

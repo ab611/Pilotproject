@@ -1,0 +1,31 @@
+So the new layout is pretty much what we talked about.
+
+- jobs.py
+
+    Each job option the user selects will have its own def() that we can pull from in main.py
+
+- main.py
+
+    Main body of program. Nothing here yet
+
+- questions.py
+
+    Will be where we store individual questions as a def(). Each question will need its own While loop
+    to prevent user input errors.
+
+    Have been playing around with adding generic responses that can open up stats, help files, etc
+
+- responses.py
+
+    Reference for all responses to questions. Figured it would be easier to put them all in one spot if we have
+    to go back and change or add to them.
+
+- scorekeeper.py
+
+    file for all tracked score values throughout the game. Looking into figuring out how to make a script that will run
+    only when certain point values are met. Example: If question 10 is "Delta invites your to interview" ... We only
+    want that to run when interview points are above 90 and randomizer selects 'yes value'
+
+-uservar.py
+
+    File to keep track and reference unique user input
