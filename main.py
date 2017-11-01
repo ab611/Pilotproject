@@ -1,7 +1,4 @@
-import intro
-import sys
+import uservar
 
 
-intro.start()
-sys.exit()
-
+uservar.difficulty()
