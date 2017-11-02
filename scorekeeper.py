@@ -3,7 +3,7 @@ import uservar
 money = 0
 age = 18
 slife = 100
-
+college = 0
 def masterpull():
     print("Ok {}, here are your stats..." .format(uservar.name))
     print("Money:", money)
@@ -12,23 +12,23 @@ def masterpull():
     print()
 # score change processes
 
+def change_college()
+    global college
+    college = 1
 
 def change_money(num):
     global money
-    x = int(num)
-    money = money + x
+    money += num
 
 
 def change_age(num):
     global age
-    x = int(num)
-    age = age + x
+    age += num
 
 
 def change_slife(num):
     global slife
-    x = int(num)
-    slife = slife + x
+    slife += num
 
 
 # interview probability: for regional interview flighthours need to = 1500 (or 1000 if you went to college) and
@@ -41,11 +41,12 @@ flighthours = 0
 
 def change_interview(num):
     global interview
-    x = int(num)
-    interview = interview + x
-
+    global college
+    interview += num
+    #Here I will use x from comment above as minimum interview points needed for interview. Then I will also embed flight hours in the equation
+    if interview >= x and (flighthours >= 1500 or (flighthours >=1000 and college = 1)):
+     # what happens if theyget interview?
 
 def change_flighthours(num):
     global flighthours
-    x = int(num)
-    flighthours = flighthours + x
+    flighthours += num

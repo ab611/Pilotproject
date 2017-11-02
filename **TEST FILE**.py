@@ -2,8 +2,11 @@
 
 import uservar
 import questions
+import scorekeeper
 
-uservar.getname()
-uservar.difficulty()
-questions.iq1()
-
+#uservar.getname()
+#uservar.difficulty()
+#questions.iq1()
+scorekeeper.masterpull()
+scorekeeper.change_money(100)
+scorekeeper.masterpull()

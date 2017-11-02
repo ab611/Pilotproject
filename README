@@ -25,6 +25,7 @@ So the new layout is pretty much what we talked about.
     file for all tracked score values throughout the game. Looking into figuring out how to make a script that will run
     only when certain point values are met. Example: If question 10 is "Delta invites your to interview" ... We only
     want that to run when interview points are above 90 and randomizer selects 'yes value'
+	this part is pretty easy, you can make a function inside the questions section that checks points and picks appropriate questions based on the points. if that makes sense. and that function will then call the questions. and the questions don't have to be functions all on their own. They can be in a dictionary
 
 -uservar.py
 

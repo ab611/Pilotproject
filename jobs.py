@@ -6,6 +6,7 @@ import uservar
 # education fork
 def college():
     # As soon as this choice is selected, the following "scores" are updated
+    scorekeeper.change_college()
     scorekeeper.change_interview(10)
     scorekeeper.change_money(-50000)
     scorekeeper.change_age(4)
