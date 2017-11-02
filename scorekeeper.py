@@ -1,9 +1,11 @@
 import uservar
+import random
 
 money = 0
 age = 18
 slife = 100
 college = 0
+outcome = False
 def masterpull():
     print("Ok {}, here are your stats..." .format(uservar.name))
     print("Money:", money)
@@ -12,7 +14,7 @@ def masterpull():
     print()
 # score change processes
 
-def change_college()
+def change_college():
     global college
     college = 1
 
@@ -44,9 +46,23 @@ def change_interview(num):
     global college
     interview += num
     #Here I will use x from comment above as minimum interview points needed for interview. Then I will also embed flight hours in the equation
-    if interview >= x and (flighthours >= 1500 or (flighthours >=1000 and college = 1)):
+    if interview >= x and (flighthours >= 1500 or (flighthours >=1000 and college == 1)):
+        print("placeholder")
      # what happens if theyget interview?
+
 
 def change_flighthours(num):
     global flighthours
     flighthours += num
+
+
+def dice(num):
+    global outcome
+    x = int(num)
+    y = random.randint(1, 100)
+    if x <= y:
+        outcome = False
+    else:
+        outcome = True
+
+

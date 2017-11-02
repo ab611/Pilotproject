@@ -1,4 +1,5 @@
 import questions
+import sys
 import scorekeeper
 import responses
 import uservar
@@ -44,6 +45,7 @@ def survey():
 #regional fork
 def airwis():
     print("unavailable right now")  # this is just a placeholder...error message thrown off without it
+    sys.exit()
 
 def skywest():
     print("unavailable right now")
