@@ -12,6 +12,7 @@ def masterpull():
     print()
 # score change processes
 
+
 def change_money(num):
     global money
     x = int(num)
@@ -30,10 +31,13 @@ def change_slife(num):
     slife = slife + x
 
 
-# interview probability
+# interview probability: for regional interview flighthours need to = 1500 (or 1000 if you went to college) and
+# interview points above x; LCC interview points above Y; Major interview points above Z for randomization process
+
 
 interview = 0
 flighthours = 0
+
 
 def change_interview(num):
     global interview

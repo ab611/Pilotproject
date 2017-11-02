@@ -29,3 +29,8 @@ So the new layout is pretty much what we talked about.
 -uservar.py
 
     File to keep track and reference unique user input
+
+
+11/2
+	Fixed lists, began work on beginning options. Mostly toying around with testing to 	to see if the "framework" will work. So far so good. Lemme know if its too 		scattered to follow. -Austin
+

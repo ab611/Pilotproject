@@ -11,6 +11,8 @@ def college():
     scorekeeper.change_age(4)
     scorekeeper.change_slife(10)
     scorekeeper.change_flighthours(200)
+    questions.cq1()
+
 
 
 def pt61():
@@ -40,34 +42,36 @@ def survey():
 
 #regional fork
 def airwis():
-
+    print("unavailable right now")  # this is just a placeholder...error message thrown off without it
 
 def skywest():
+    print("unavailable right now")
 
 
 def republic():
-
+    print("unavailable right now")
 
 def piedmont():
-
+    print("unavailable right now")
 
 def corperate():
-
+    print("unavailable right now")
 # LCC fork
 def spirit ():
-
+    print("unavailable right now")
 
 def jetblue():
-
+    print("unavailable right now")
 
 # major airline fork
 def southwest():
-
+    print("unavailable right now")
 
 def united():
-
+    print("unavailable right now")
 
 def american():
-
+    print("unavailable right now")
 
 def delta():
+    print("unavailable right now")
