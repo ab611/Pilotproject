@@ -21,16 +21,21 @@ def iq1():
 
 def iq2():
     while True:
-        scorekeeper.age = 18
         answer = input("Ok {}, would you like to play on Easy, Medium, or Hard? " .format(uservar.name))
         if answer.lower() in responses.easy:
             scorekeeper.money = 100000
+            scorekeeper.age = 18
+            scorekeeper.slice = 100
             iq3()
         if answer.lower() in responses.medium:
             scorekeeper.money = 75000
+            scorekeeper.age = 21
+            scorekeeper.slife = 75
             iq3()
         if answer.lower() in responses.hard:
             scorekeeper.money = 50000
+            scorekeeper.age = 25
+            scorekeeper.slife = 50
             iq3()
         else:
             print("invalid input")
@@ -73,14 +78,14 @@ def iq4():
 
 def iq5():
     while True:
-        answer = input("Your the first step in your career is getting your pilots license. Do you want to get it through "
-                       "a college program or a local flight school? ")
+        answer = input("Your the first step in your career is getting your pilots license. Do you want to get it "
+                       "through a college program or a local flight school? ")
         if answer.lower() in responses.college:
             print("Alright! Pack your beer bong, we're going to college! ")
             jobs.college()
 
         if answer.lower() in responses.local:
-            print("Hopefully a smart choice...Move into your parents basement and keep that sweet job at Applebee\'s "
+            print("Hopefully a smart choice...Move into your parents basement and keep that sweet job at Applebee's "
                   "while you pay your way through flight school. ")
             jobs.pt61()
 
@@ -103,21 +108,21 @@ def cq1():
             scorekeeper.change_money(-10000)
             scorekeeper.change_slife(-50)
             scorekeeper.change_interview(10)
-            college = responses.riddle
+            college = answer.lower()
             print("Welcome to the Harvard of the Skies...hopefully this won't taint your career...")
             cq2()
 
         if answer.lower() in responses.dakota:
             scorekeeper.change_slife(10)
             scorekeeper.change_interview(5)
-            college = responses.dakota
+            college = answer.lower()
             print("Welcome to The University of North Dakota")
             cq2()
 
         if answer.lower() in responses.uva:
             scorekeeper.change_money(10000)
             scorekeeper.change_slife(-10)
-            college = responses.uva
+            college = answer.lower()
             print("Welcome to Utah Valley!")
             cq2()
 
@@ -125,7 +130,7 @@ def cq1():
             scorekeeper.change_interview(5)
             scorekeeper.change_slife(15)
             scorekeeper.change_money(-1000)
-            college = responses.purdue
+            college = answer.lower()
             print("Welcome to Purdue")
             cq2()
 
@@ -160,7 +165,6 @@ def cq2():
                       "for your stupidity. You're now a full member of Alpha Sigma Sigma!")
                 scorekeeper.change_interview(30)
                 scorekeeper.masterpull()
-                continue
                 cq3()
         if answer.lower() in responses.no:
             print("Well...you made a smart choice. Your frat brothers hazed the crap out of you before kicking you out"
@@ -173,6 +177,7 @@ def cq2():
 
 
 def cq3():
+    scorekeeper.change_age(1)
     if college in responses.riddle:
         while True:
             answer = input(textwrap.fill("You met the only girl in Daytona dumb enough to date someone from riddle!"

@@ -3,10 +3,15 @@ import random
 import time
 
 money = 0
-age = 18
-slife = 100
+age = 0
+slife = 0
 college = 0
 outcome = False
+
+
+def age_set():
+    global age
+    age = 18
 
 def masterpull():
     time.sleep(1)
@@ -18,7 +23,7 @@ def masterpull():
     time.sleep(1)
     print()
     input("Press any key to continue...")
-    return
+
 
 # score change processes
 def change(item,num):
@@ -34,16 +39,19 @@ def change_college():
 
 def change_money(num):
     global money
+    num = int(num)
     money += num
 
 
 def change_age(num):
     global age
+    num = int(num)
     age += num
 
 
 def change_slife(num):
     global slife
+    num = int(num)
     slife += num
 
 
