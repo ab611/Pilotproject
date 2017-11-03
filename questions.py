@@ -25,7 +25,7 @@ def iq2():
         if answer.lower() in responses.easy:
             scorekeeper.money = 100000
             scorekeeper.age = 18
-            scorekeeper.slice = 100
+            scorekeeper.slife = 100
             iq3()
         if answer.lower() in responses.medium:
             scorekeeper.money = 75000
@@ -33,7 +33,7 @@ def iq2():
             scorekeeper.slife = 75
             iq3()
         if answer.lower() in responses.hard:
-            scorekeeper.money = 50000
+            scorekeeper.money = 65000
             scorekeeper.age = 25
             scorekeeper.slife = 50
             iq3()
@@ -291,5 +291,123 @@ def cq3():
 
 
 def cq4():
-    sys.exit()
+    scorekeeper.change_age(1)
+    if college in responses.riddle:
+        while True:
+            answer = input(textwrap.fill("Spring Break is fast approaching. Do you want to rent a plane and go to the"
+                                         "keys? (You'll build get some experience, but for a cost..."))
+            if answer.lower() in responses.yes:
+                scorekeeper.dice(50)
+                while not scorekeeper.outcome:
+                    scorekeeper.change_interview(5)
+                    scorekeeper.change_slife(-10)
+                    scorekeeper.change_money(-500)
+                    print(textwrap.fill("Well...unfortunately, the plane lost a fuel pump and you spent your spring "
+                                        "break in everglade city. Good thing you're still alive though, now you can "
+                                        "use this for a TMAT in future interviews! "))
+                    scorekeeper.masterpull()
+                    cq5()
+                while scorekeeper.outcome:
+                    scorekeeper.change_slife(10)
+                    scorekeeper.change_money(-1000)
+                    print("Your trip was pretty uneventful. I guess that's good!")
+                    scorekeeper.masterpull()
+                    cq5()
+            if answer.lower() in responses.no:
+                scorekeeper.change_slife(-5)
+                print(textwrap.fill("Everyone else left for spring break...including the flight school dispatcher. "
+                                    "You literally did nothing all week."))
+                scorekeeper.masterpull()
+            else:
+                print("Invalid option")
+                continue
+    if college in responses.purdue:
+        while True:
+            answer = input(textwrap.fill("A classmate wants to know if you will fly them home for the weekend in "
+                                         "return for some spending money...Do you want to take them?"))
+            if answer.lower() in responses.yes:
+                scorekeeper.dice(50)
+                while not scorekeeper.outcome:
+                    scorekeeper.change_interview(5)
+                    scorekeeper.change_money(500)
+                    print(textwrap.fill("While enroute, your friend got really sick. You diverted to Indianapolis. "
+                                        "It was your first emergency. Save that for future interview experience!"))
+                    scorekeeper.masterpull()
+                    cq5()
+                while scorekeeper.outcome:
+                    scorekeeper.change_slife(-10)
+                    scorekeeper.change_money(500)
+                    print(textwrap.fill("That was pretty uneventful. You ended up just spending the weekend with your"
+                                        " friend and his weird distant relatives"))
+                    scorekeeper.masterpull()
+                    cq5()
+            if answer.lower() in responses.no:
+                scorekeeper.change_slife(5)
+                scorekeeper.change_money(-100)
+                print("You stayed in Lafayette for the weekend and went to the bars instead...")
+                scorekeeper.masterpull()
+                cq5()
+            else:
+                print("Invalid option")
+                continue
+    if college in responses.uva:
+        while True:
+            answer = input(textwrap.fill("You decide the weather is nice enough for some aerial sight seeing..."
+                                         "do you want to rent the cheapest airplane you can find?"))
+            if answer.lower() in responses.yes:
+                scorekeeper.dice(50)
+                while not scorekeeper.outcome:
+                    scorekeeper.change_interview(5)
+                    scorekeeper.change_money(-500)
+                    print(textwrap.fill("Your questionable plane suffered engine failure while somewhere over the "
+                                        "salt flats. Luckily you lived. This experience should come in handy for "
+                                        "future interviews"))
+                    scorekeeper.masterpull()
+                    cq5()
+                while scorekeeper.outcome:
+                    scorekeeper.change_money(-500)
+                    print("You got some nice pictures of the Great Salt Lake...isn't that nice?")
+                    scorekeeper.masterpull()
+                    cq5()
+            if answer.lower() in responses.no:
+                scorekeeper.change_slife(10)
+                print(textwrap.fill("You decided to just slum it around campus...then you found a party! "
+                                    "You begrudgingly attend and found some people who aren't mormon@ "))
+                scorekeeper.masterpull()
+                cq5()
+            else:
+                print("Invalid option")
+                continue
+    if college in responses.dakota:
+        while True:
+            answer = input(textwrap.fill("A local farmer wants you to fly over his land and help him find a missing "
+                                         "cow. He said he'd pay you in steak. You interested?"))
+            if answer.lower() in responses.yes:
+                scorekeeper.dice(50)
+                while not scorekeeper.outcome:
+                    scorekeeper.change_interview(5)
+                    scorekeeper.change_money(-100)
+                    print(textwrap.fill("The weather turned bad unexpectedly and you were forced to land in the "
+                                        "farmers field. Luckily nobody was hurt and you got a sweet interview "
+                                        "story..."))
+                    scorekeeper.masterpull()
+                    cq5()
+                while scorekeeper.outcome:
+                    scorekeeper.change_money(-100)
+                    print(textwrap.fill("That went pretty well...You got a free steak too"))
+                    scorekeeper.masterpull()
+                    cq5()
+            if answer.lower() in responses.no():
+                scorekeeper.change_slife(-5)
+                scorekeeper.change_interview(5)
+                print(textwrap.fill("You spent the weekend stuffing your face with cheese curds instead...No shame"))
+                scorekeeper.masterpull()
+                cq5()
 
+            else:
+                print("Invalid option")
+                continue
+
+
+def cq5():
+    sys.exit()

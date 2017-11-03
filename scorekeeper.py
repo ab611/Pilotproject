@@ -39,19 +39,16 @@ def change_college():
 
 def change_money(num):
     global money
-    num = int(num)
     money += num
 
 
 def change_age(num):
     global age
-    num = int(num)
     age += num
 
 
 def change_slife(num):
     global slife
-    num = int(num)
     slife += num
 
 
