@@ -32,7 +32,7 @@ def difficulty():
 # User specific information
 
 name = 0
-
+college = 0
 
 def getname():
     global name

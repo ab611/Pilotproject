@@ -1,5 +1,6 @@
 import uservar
 import random
+import time
 
 money = 0
 age = 18
@@ -8,11 +9,15 @@ college = 0
 outcome = False
 
 def masterpull():
+    time.sleep(1)
+    print()
     print("Ok {}, here are your updated stats..." .format(uservar.name))
     print("Money:", money)
     print("Age:", age)
     print("Social Life:", slife)
+    time.sleep(1)
     print()
+    input("Press any key to continue...")
 
 # score change processes
 def change(item,num):

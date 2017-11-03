@@ -29,4 +29,4 @@ def test():
             continue
 
 
-questions.cq2()
+questions.iq2()
