@@ -15,6 +15,12 @@ def masterpull():
     print()
 
 # score change processes
+def change(item,num):
+    global college
+    global money
+    global age
+    global slife
+    item += num
 
 def change_college():
     global college
