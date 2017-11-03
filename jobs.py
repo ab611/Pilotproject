@@ -14,6 +14,7 @@ def college():
     scorekeeper.change_slife(10)
     scorekeeper.change_flighthours(200)
     questions.cq1()
+    sys.exit()  # placeholder for test
 
 
 
@@ -24,6 +25,7 @@ def pt61():
     scorekeeper.change_age(2)
     scorekeeper.change_slife(0)
     scorekeeper.change_flighthours(250)
+    sys.exit()  # placeholder for test
 
 
 # time building fork

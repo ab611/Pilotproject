@@ -6,12 +6,14 @@ age = 18
 slife = 100
 college = 0
 outcome = False
+
 def masterpull():
-    print("Ok {}, here are your stats..." .format(uservar.name))
+    print("Ok {}, here are your updated stats..." .format(uservar.name))
     print("Money:", money)
     print("Age:", age)
     print("Social Life:", slife)
     print()
+
 # score change processes
 
 def change_college():
@@ -40,7 +42,7 @@ def change_slife(num):
 interview = 0
 flighthours = 0
 
-
+x = 0
 def change_interview(num):
     global interview
     global college

@@ -27,4 +27,6 @@ def test():
         else:
             print("Invalid input")
             continue
-test()
+
+
+questions.cq2()
