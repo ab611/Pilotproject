@@ -12,8 +12,8 @@ college = uservar.college
 
 def iq1():
     while True:
-        uservar.name = input("What is your name")
-        answer = input("{}...is that correct?".format(uservar.name))
+        uservar.name = input("What is your name: ")
+        answer = input("%s...is that correct?" % uservar.name)
         if answer.lower() in responses.yes:
             iq2()
         if answer.lower() in responses.no:
@@ -22,7 +22,7 @@ def iq1():
 def iq2():
     while True:
         scorekeeper.age = 18
-        answer = input("Ok {}, would you like to play on Easy, Medium, or Hard?" .format(uservar.name))
+        answer = input("Ok {}, would you like to play on Easy, Medium, or Hard? " .format(uservar.name))
         if answer.lower() in responses.easy:
             scorekeeper.money = 100000
             iq3()
@@ -38,10 +38,10 @@ def iq2():
 
 def iq3():
     while True:
-        answer = input("{} have you played before?".format(uservar.name))
+        answer = input("{} have you played before? ".format(uservar.name))
         if answer.lower() in responses.yes:
             while True:
-                answer1 = input("Would you like to review the rules and commands?")
+                answer1 = input("Would you like to review the rules and commands? ")
                 if answer1.lower() in responses.yes:
                     print("INSERT HELP FILE HERE")
                     input("Press any key to continue")
@@ -62,7 +62,7 @@ def iq3():
 
 def iq4():
     while True:
-        answer = input("Ok...Ready to begin?")
+        answer = input("Ok...Ready to begin? ")
         if answer.lower() in responses.yes:
             iq5()
         if answer.lower() in responses.no:
@@ -73,15 +73,15 @@ def iq4():
 
 def iq5():
     while True:
-        answer = input("Your the first step in your career is getting your pilots license. Do you want to get it though"
-                       "a college program or a local flight school?")
+        answer = input("Your the first step in your career is getting your pilots license. Do you want to get it through "
+                       "a college program or a local flight school? ")
         if answer.lower() in responses.college:
-            print("Alright! Pack your beer bong, we're going to college!")
+            print("Alright! Pack your beer bong, we're going to college! ")
             jobs.college()
 
         if answer.lower() in responses.local:
-            print("Hopefully a smart choice...Move into your parents basement and keep that sweet job at Applebees "
-                  "while you pay your way through flight school.")
+            print("Hopefully a smart choice...Move into your parents basement and keep that sweet job at Applebee\'s "
+                  "while you pay your way through flight school. ")
             jobs.pt61()
 
         if answer.lower() in responses.stats:
@@ -97,8 +97,8 @@ def iq5():
 def cq1():
     global college
     while True:
-        answer = input("Which college do you want to go to? (Embry-Riddle, Purdue, University of North Dakota"
-                       "Utah Valley University")
+        answer = input("Which college do you want to go to? (Embry-Riddle, Purdue, University of North Dakota,"
+                       " Utah Valley University) ")
         if answer.lower() in responses.riddle:
             scorekeeper.change_money(-10000)
             scorekeeper.change_slife(-50)
@@ -144,7 +144,7 @@ def cq2():
         answer = input(textwrap.fill("its rush week! You've had a few drinks when a frat brother calls you and asks to "
                                      "be picked up from the bar. If you say yes, you'll be a shoe in to the fraternity "
                                      "which might help later in your career. If you say no, your greek life is over. So"
-                                     " what do you say...risk the DUI?"))
+                                     " what do you say...risk the DUI? "))
         if answer.lower() in responses.yes:
             scorekeeper.dice(50)
             while not scorekeeper.outcome:
@@ -160,6 +160,7 @@ def cq2():
                       "for your stupidity. You're now a full member of Alpha Sigma Sigma!")
                 scorekeeper.change_interview(30)
                 scorekeeper.masterpull()
+                continue
                 cq3()
         if answer.lower() in responses.no:
             print("Well...you made a smart choice. Your frat brothers hazed the crap out of you before kicking you out"

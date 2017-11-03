@@ -18,6 +18,7 @@ def masterpull():
     time.sleep(1)
     print()
     input("Press any key to continue...")
+    return
 
 # score change processes
 def change(item,num):
