@@ -60,7 +60,7 @@ def republic():
 def piedmont():
     print("unavailable right now")
 
-def corperate():
+def corporate():
     print("unavailable right now")
 # LCC fork
 def spirit ():
